@@ -34,7 +34,7 @@
 | Sec-Fetch-Mode Header is Missing | Informational | 3 |
 | Sec-Fetch-Site Header is Missing | Informational | 3 |
 | Sec-Fetch-User Header is Missing | Informational | 3 |
-| Session Management Response Identified | Informational | 2 |
+| Session Management Response Identified | Informational | 1 |
 | Storable but Non-Cacheable Content | Informational | 1 |
 | User Agent Fuzzer | Informational | 12 |
 
@@ -856,7 +856,7 @@ Ensure that Sec-Fetch-User header is included in user initiated requests.
 
 
 
-##### Informational (High)
+##### Informational (Medium)
 
 ### Description
 
@@ -866,18 +866,11 @@ The given response has been identified as containing a session management token.
   * Method: `GET`
   * Parameter: `73ba4ae40b2616fad37251e1cb69183b`
   * Attack: ``
-  * Evidence: `86f0846f078aca3c7a551f640af8f8b2`
-  * Other Info: `
-cookie:73ba4ae40b2616fad37251e1cb69183b`
-* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1131
-  * Method: `GET`
-  * Parameter: `73ba4ae40b2616fad37251e1cb69183b`
-  * Attack: ``
-  * Evidence: `86f0846f078aca3c7a551f640af8f8b2`
+  * Evidence: `280f2ccb2b8d8063150990135a684f1f`
   * Other Info: `
 cookie:73ba4ae40b2616fad37251e1cb69183b`
 
-Instances: 2
+Instances: 1
 
 ### Solution
 

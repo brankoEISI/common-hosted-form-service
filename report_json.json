@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Tue, 7 Nov 2023 19:42:52",
+	"@generated": "Tue, 7 Nov 2023 20:34:35",
 	"site":[ 
 		{
 			"@name": "https://chefs-dev.apps.silver.devops.gov.bc.ca",
@@ -147,7 +147,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7231#section-5.1.2</p>",
 					"cweid": "200",
 					"wascid": "45",
-					"sourceid": "534"
+					"sourceid": "685"
 				},
 				{
 					"pluginid": "10054",
@@ -373,7 +373,7 @@
 					"reference": "<p>http://projects.webappsec.org/Fingerprinting</p>",
 					"cweid": "200",
 					"wascid": "45",
-					"sourceid": "634"
+					"sourceid": "790"
 				},
 				{
 					"pluginid": "10109",
@@ -667,19 +667,11 @@
 							"method": "GET",
 							"param": "73ba4ae40b2616fad37251e1cb69183b",
 							"attack": "",
-							"evidence": "86f0846f078aca3c7a551f640af8f8b2",
-							"otherinfo": "\ncookie:73ba4ae40b2616fad37251e1cb69183b"
-						},
-						{
-							"uri": "https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1131",
-							"method": "GET",
-							"param": "73ba4ae40b2616fad37251e1cb69183b",
-							"attack": "",
-							"evidence": "86f0846f078aca3c7a551f640af8f8b2",
+							"evidence": "280f2ccb2b8d8063150990135a684f1f",
 							"otherinfo": "\ncookie:73ba4ae40b2616fad37251e1cb69183b"
 						}
 					],
-					"count": "2",
+					"count": "1",
 					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
 					"otherinfo": "<p></p><p>cookie:73ba4ae40b2616fad37251e1cb69183b</p>",
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</p>",
@@ -827,7 +819,7 @@
 					"reference": "<p>https://owasp.org/wstg</p>",
 					"cweid": "0",
 					"wascid": "0",
-					"sourceid": "295"
+					"sourceid": "452"
 				}
 			]
 		}
