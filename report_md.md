@@ -6,7 +6,7 @@
 | Risk Level | Number of Alerts |
 | --- | --- |
 | High | 0 |
-| Medium | 1 |
+| Medium | 2 |
 | Low | 2 |
 | Informational | 5 |
 
@@ -18,13 +18,14 @@
 | Name | Risk Level | Number of Instances |
 | --- | --- | --- |
 | Content Security Policy (CSP) Header Not Set | Medium | 4 |
+| Proxy Disclosure | Medium | 1 |
 | Permissions Policy Header Not Set | Low | 4 |
 | Strict-Transport-Security Header Not Set | Low | 4 |
 | Non-Storable Content | Informational | 4 |
-| Sec-Fetch-Dest Header is Missing | Informational | 4 |
-| Sec-Fetch-Mode Header is Missing | Informational | 4 |
-| Sec-Fetch-Site Header is Missing | Informational | 4 |
-| Sec-Fetch-User Header is Missing | Informational | 4 |
+| Sec-Fetch-Dest Header is Missing | Informational | 3 |
+| Sec-Fetch-Mode Header is Missing | Informational | 3 |
+| Sec-Fetch-Site Header is Missing | Informational | 3 |
+| Sec-Fetch-User Header is Missing | Informational | 3 |
 
 
 
@@ -49,7 +50,7 @@ Content Security Policy (CSP) is an added layer of security that helps to detect
   * Attack: ``
   * Evidence: ``
   * Other Info: ``
-* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1151
+* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1153
   * Method: `GET`
   * Parameter: ``
   * Attack: ``
@@ -93,6 +94,53 @@ Ensure that your web server, application server, load balancer, etc. is configur
 
 #### Source ID: 3
 
+### [ Proxy Disclosure ](https://www.zaproxy.org/docs/alerts/40025/)
+
+
+
+##### Medium (Medium)
+
+### Description
+
+1 proxy server(s) were detected or fingerprinted. This information helps a potential attacker to determine 
+ - A list of targets for an attack against the application.
+ - Potential vulnerabilities on the proxy servers that service the application.
+ - The presence or absence of any proxy-based components that might cause attacks against the application to be detected, prevented, or mitigated. 
+
+* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1153
+  * Method: `GET`
+  * Parameter: ``
+  * Attack: `TRACE, OPTIONS methods with 'Max-Forwards' header. TRACK method.`
+  * Evidence: ``
+  * Other Info: `Using the TRACE, OPTIONS, and TRACK methods, the following proxy servers have been identified between ZAP and the application/web server: 
+- Unknown
+The following web/application server has been identified: 
+- Unknown
+`
+
+Instances: 1
+
+### Solution
+
+Disable the 'TRACE' method on the proxy servers, as well as the origin web/application server.
+Disable the 'OPTIONS' method on the proxy servers, as well as the origin web/application server, if it is not required for other purposes, such as 'CORS' (Cross Origin Resource Sharing).
+Configure the web and application servers with custom error pages, to prevent 'fingerprintable' product-specific error pages being leaked to the user in the event of HTTP errors, such as 'TRACK' requests for non-existent pages.
+Configure all proxies, application servers, and web servers to prevent disclosure of the technology and version information in the 'Server' and 'X-Powered-By' HTTP response headers.
+
+
+### Reference
+
+
+* [ https://tools.ietf.org/html/rfc7231#section-5.1.2 ](https://tools.ietf.org/html/rfc7231#section-5.1.2)
+
+
+#### CWE Id: [ 200 ](https://cwe.mitre.org/data/definitions/200.html)
+
+
+#### WASC Id: 45
+
+#### Source ID: 1
+
 ### [ Permissions Policy Header Not Set ](https://www.zaproxy.org/docs/alerts/10063/)
 
 
@@ -109,7 +157,7 @@ Permissions Policy Header is an added layer of security that helps to restrict f
   * Attack: ``
   * Evidence: ``
   * Other Info: ``
-* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1151
+* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1153
   * Method: `GET`
   * Parameter: ``
   * Attack: ``
@@ -167,7 +215,7 @@ HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby
   * Attack: ``
   * Evidence: ``
   * Other Info: ``
-* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1151
+* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1153
   * Method: `GET`
   * Parameter: ``
   * Attack: ``
@@ -225,7 +273,7 @@ The response contents are not storable by caching components such as proxy serve
   * Attack: ``
   * Evidence: `no-store`
   * Other Info: ``
-* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1151
+* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1153
   * Method: `GET`
   * Parameter: ``
   * Attack: ``
@@ -286,13 +334,7 @@ It must have a status code that is defined as cacheable by default (200, 203, 20
 
 Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.
 
-* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/
-  * Method: `GET`
-  * Parameter: `Sec-Fetch-Dest`
-  * Attack: ``
-  * Evidence: ``
-  * Other Info: ``
-* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1151
+* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1153
   * Method: `GET`
   * Parameter: `Sec-Fetch-Dest`
   * Attack: ``
@@ -311,7 +353,7 @@ Specifies how and where the data would be used. For instance, if the value is au
   * Evidence: ``
   * Other Info: ``
 
-Instances: 4
+Instances: 3
 
 ### Solution
 
@@ -340,13 +382,7 @@ Ensure that Sec-Fetch-Dest header is included in request headers.
 
 Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.
 
-* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/
-  * Method: `GET`
-  * Parameter: `Sec-Fetch-Mode`
-  * Attack: ``
-  * Evidence: ``
-  * Other Info: ``
-* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1151
+* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1153
   * Method: `GET`
   * Parameter: `Sec-Fetch-Mode`
   * Attack: ``
@@ -365,7 +401,7 @@ Allows to differentiate between requests for navigating between HTML pages and r
   * Evidence: ``
   * Other Info: ``
 
-Instances: 4
+Instances: 3
 
 ### Solution
 
@@ -394,13 +430,7 @@ Ensure that Sec-Fetch-Mode header is included in request headers.
 
 Specifies the relationship between request initiator's origin and target's origin.
 
-* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/
-  * Method: `GET`
-  * Parameter: `Sec-Fetch-Site`
-  * Attack: ``
-  * Evidence: ``
-  * Other Info: ``
-* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1151
+* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1153
   * Method: `GET`
   * Parameter: `Sec-Fetch-Site`
   * Attack: ``
@@ -419,7 +449,7 @@ Specifies the relationship between request initiator's origin and target's origi
   * Evidence: ``
   * Other Info: ``
 
-Instances: 4
+Instances: 3
 
 ### Solution
 
@@ -448,13 +478,7 @@ Ensure that Sec-Fetch-Site header is included in request headers.
 
 Specifies if a navigation request was initiated by a user.
 
-* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/
-  * Method: `GET`
-  * Parameter: `Sec-Fetch-User`
-  * Attack: ``
-  * Evidence: ``
-  * Other Info: ``
-* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1151
+* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1153
   * Method: `GET`
   * Parameter: `Sec-Fetch-User`
   * Attack: ``
@@ -473,7 +497,7 @@ Specifies if a navigation request was initiated by a user.
   * Evidence: ``
   * Other Info: ``
 
-Instances: 4
+Instances: 3
 
 ### Solution
 
