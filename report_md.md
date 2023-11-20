@@ -22,10 +22,10 @@
 | Permissions Policy Header Not Set | Low | 4 |
 | Strict-Transport-Security Header Not Set | Low | 4 |
 | Non-Storable Content | Informational | 4 |
-| Sec-Fetch-Dest Header is Missing | Informational | 3 |
-| Sec-Fetch-Mode Header is Missing | Informational | 3 |
-| Sec-Fetch-Site Header is Missing | Informational | 3 |
-| Sec-Fetch-User Header is Missing | Informational | 3 |
+| Sec-Fetch-Dest Header is Missing | Informational | 4 |
+| Sec-Fetch-Mode Header is Missing | Informational | 4 |
+| Sec-Fetch-Site Header is Missing | Informational | 4 |
+| Sec-Fetch-User Header is Missing | Informational | 4 |
 
 
 
@@ -334,6 +334,12 @@ It must have a status code that is defined as cacheable by default (200, 203, 20
 
 Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.
 
+* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/
+  * Method: `GET`
+  * Parameter: `Sec-Fetch-Dest`
+  * Attack: ``
+  * Evidence: ``
+  * Other Info: ``
 * URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1153
   * Method: `GET`
   * Parameter: `Sec-Fetch-Dest`
@@ -353,7 +359,7 @@ Specifies how and where the data would be used. For instance, if the value is au
   * Evidence: ``
   * Other Info: ``
 
-Instances: 3
+Instances: 4
 
 ### Solution
 
@@ -382,6 +388,12 @@ Ensure that Sec-Fetch-Dest header is included in request headers.
 
 Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.
 
+* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/
+  * Method: `GET`
+  * Parameter: `Sec-Fetch-Mode`
+  * Attack: ``
+  * Evidence: ``
+  * Other Info: ``
 * URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1153
   * Method: `GET`
   * Parameter: `Sec-Fetch-Mode`
@@ -401,7 +413,7 @@ Allows to differentiate between requests for navigating between HTML pages and r
   * Evidence: ``
   * Other Info: ``
 
-Instances: 3
+Instances: 4
 
 ### Solution
 
@@ -430,6 +442,12 @@ Ensure that Sec-Fetch-Mode header is included in request headers.
 
 Specifies the relationship between request initiator's origin and target's origin.
 
+* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/
+  * Method: `GET`
+  * Parameter: `Sec-Fetch-Site`
+  * Attack: ``
+  * Evidence: ``
+  * Other Info: ``
 * URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1153
   * Method: `GET`
   * Parameter: `Sec-Fetch-Site`
@@ -449,7 +467,7 @@ Specifies the relationship between request initiator's origin and target's origi
   * Evidence: ``
   * Other Info: ``
 
-Instances: 3
+Instances: 4
 
 ### Solution
 
@@ -478,6 +496,12 @@ Ensure that Sec-Fetch-Site header is included in request headers.
 
 Specifies if a navigation request was initiated by a user.
 
+* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/
+  * Method: `GET`
+  * Parameter: `Sec-Fetch-User`
+  * Attack: ``
+  * Evidence: ``
+  * Other Info: ``
 * URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1153
   * Method: `GET`
   * Parameter: `Sec-Fetch-User`
@@ -497,7 +521,7 @@ Specifies if a navigation request was initiated by a user.
   * Evidence: ``
   * Other Info: ``
 
-Instances: 3
+Instances: 4
 
 ### Solution
 
