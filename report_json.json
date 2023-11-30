@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Thu, 30 Nov 2023 18:33:59",
+	"@generated": "Thu, 30 Nov 2023 18:45:58",
 	"site":[ 
 		{
 			"@name": "https://chefs-dev.apps.silver.devops.gov.bc.ca",
@@ -147,7 +147,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7231#section-5.1.2</p>",
 					"cweid": "200",
 					"wascid": "45",
-					"sourceid": "453"
+					"sourceid": "451"
 				},
 				{
 					"pluginid": "10054",
@@ -373,7 +373,7 @@
 					"reference": "<p>http://projects.webappsec.org/Fingerprinting</p>",
 					"cweid": "200",
 					"wascid": "45",
-					"sourceid": "551"
+					"sourceid": "550"
 				},
 				{
 					"pluginid": "10109",
@@ -390,7 +390,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/pr-1131/assets/index-ee010db5.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/pr-1131/assets/index-ab290623.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						}
 					],
@@ -667,7 +667,7 @@
 							"method": "GET",
 							"param": "73ba4ae40b2616fad37251e1cb69183b",
 							"attack": "",
-							"evidence": "62f6634be3ed823509277f1469900212",
+							"evidence": "d89f548fa2c328e2f5b51675b16ba984",
 							"otherinfo": "\ncookie:73ba4ae40b2616fad37251e1cb69183b"
 						},
 						{
@@ -675,7 +675,7 @@
 							"method": "GET",
 							"param": "73ba4ae40b2616fad37251e1cb69183b",
 							"attack": "",
-							"evidence": "62f6634be3ed823509277f1469900212",
+							"evidence": "d89f548fa2c328e2f5b51675b16ba984",
 							"otherinfo": "\ncookie:73ba4ae40b2616fad37251e1cb69183b"
 						}
 					],
@@ -827,7 +827,7 @@
 					"reference": "<p>https://owasp.org/wstg</p>",
 					"cweid": "0",
 					"wascid": "0",
-					"sourceid": "216"
+					"sourceid": "214"
 				}
 			]
 		}
