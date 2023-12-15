@@ -49,7 +49,7 @@ Content Security Policy (CSP) is an added layer of security that helps to detect
   * Attack: ``
   * Evidence: ``
   * Other Info: ``
-* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1188
+* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1190
   * Method: `GET`
   * Parameter: ``
   * Attack: ``
@@ -109,7 +109,7 @@ Permissions Policy Header is an added layer of security that helps to restrict f
   * Attack: ``
   * Evidence: ``
   * Other Info: ``
-* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1188
+* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1190
   * Method: `GET`
   * Parameter: ``
   * Attack: ``
@@ -167,7 +167,7 @@ HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby
   * Attack: ``
   * Evidence: ``
   * Other Info: ``
-* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1188
+* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1190
   * Method: `GET`
   * Parameter: ``
   * Attack: ``
@@ -225,7 +225,7 @@ The response contents are not storable by caching components such as proxy serve
   * Attack: ``
   * Evidence: `no-store`
   * Other Info: ``
-* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1188
+* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1190
   * Method: `GET`
   * Parameter: ``
   * Attack: ``
@@ -292,7 +292,7 @@ Specifies how and where the data would be used. For instance, if the value is au
   * Attack: ``
   * Evidence: ``
   * Other Info: ``
-* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1188
+* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1190
   * Method: `GET`
   * Parameter: `Sec-Fetch-Dest`
   * Attack: ``
@@ -346,7 +346,7 @@ Allows to differentiate between requests for navigating between HTML pages and r
   * Attack: ``
   * Evidence: ``
   * Other Info: ``
-* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1188
+* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1190
   * Method: `GET`
   * Parameter: `Sec-Fetch-Mode`
   * Attack: ``
@@ -400,7 +400,7 @@ Specifies the relationship between request initiator's origin and target's origi
   * Attack: ``
   * Evidence: ``
   * Other Info: ``
-* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1188
+* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1190
   * Method: `GET`
   * Parameter: `Sec-Fetch-Site`
   * Attack: ``
@@ -454,7 +454,7 @@ Specifies if a navigation request was initiated by a user.
   * Attack: ``
   * Evidence: ``
   * Other Info: ``
-* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1188
+* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1190
   * Method: `GET`
   * Parameter: `Sec-Fetch-User`
   * Attack: ``
