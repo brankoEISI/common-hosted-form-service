@@ -74,10 +74,9 @@ Ensure that your web server, application server, load balancer, etc. is properly
 ### Reference
 
 
-* [ http://www.w3.org/TR/CSP2/ ](http://www.w3.org/TR/CSP2/)
-* [ http://www.w3.org/TR/CSP/ ](http://www.w3.org/TR/CSP/)
-* [ http://caniuse.com/#search=content+security+policy ](http://caniuse.com/#search=content+security+policy)
-* [ http://content-security-policy.com/ ](http://content-security-policy.com/)
+* [ https://www.w3.org/TR/CSP/ ](https://www.w3.org/TR/CSP/)
+* [ https://caniuse.com/#search=content+security+policy ](https://caniuse.com/#search=content+security+policy)
+* [ https://content-security-policy.com/ ](https://content-security-policy.com/)
 * [ https://github.com/shapesecurity/salvation ](https://github.com/shapesecurity/salvation)
 * [ https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources ](https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources)
 
@@ -135,11 +134,11 @@ Ensure that your web server, application server, load balancer, etc. is configur
 
 * [ https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy ](https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy)
 * [ https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html ](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html)
-* [ http://www.w3.org/TR/CSP/ ](http://www.w3.org/TR/CSP/)
-* [ http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html ](http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html)
-* [ http://www.html5rocks.com/en/tutorials/security/content-security-policy/ ](http://www.html5rocks.com/en/tutorials/security/content-security-policy/)
-* [ http://caniuse.com/#feat=contentsecuritypolicy ](http://caniuse.com/#feat=contentsecuritypolicy)
-* [ http://content-security-policy.com/ ](http://content-security-policy.com/)
+* [ https://www.w3.org/TR/CSP/ ](https://www.w3.org/TR/CSP/)
+* [ https://w3c.github.io/webappsec-csp/ ](https://w3c.github.io/webappsec-csp/)
+* [ https://web.dev/articles/csp ](https://web.dev/articles/csp)
+* [ https://caniuse.com/#feat=contentsecuritypolicy ](https://caniuse.com/#feat=contentsecuritypolicy)
+* [ https://content-security-policy.com/ ](https://content-security-policy.com/)
 
 
 #### CWE Id: [ 693 ](https://cwe.mitre.org/data/definitions/693.html)
@@ -369,8 +368,8 @@ Ensure that your web server, application server, load balancer, etc. is configur
 ### Reference
 
 
-* [ http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx ](http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx)
-* [ http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html ](http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html)
+* [ https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework ](https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework)
+* [ https://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html ](https://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html)
 
 
 #### CWE Id: [ 200 ](https://cwe.mitre.org/data/definitions/200.html)
@@ -426,9 +425,9 @@ Ensure that your web server, application server, load balancer, etc. is configur
 
 * [ https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html ](https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html)
 * [ https://owasp.org/www-community/Security_Headers ](https://owasp.org/www-community/Security_Headers)
-* [ http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security ](http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security)
-* [ http://caniuse.com/stricttransportsecurity ](http://caniuse.com/stricttransportsecurity)
-* [ http://tools.ietf.org/html/rfc6797 ](http://tools.ietf.org/html/rfc6797)
+* [ https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security ](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security)
+* [ https://caniuse.com/stricttransportsecurity ](https://caniuse.com/stricttransportsecurity)
+* [ https://datatracker.ietf.org/doc/html/rfc6797 ](https://datatracker.ietf.org/doc/html/rfc6797)
 
 
 #### CWE Id: [ 319 ](https://cwe.mitre.org/data/definitions/319.html)
@@ -466,7 +465,7 @@ If possible, ensure that the end user uses a standards-compliant and modern web 
 ### Reference
 
 
-* [ http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx ](http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx)
+* [ https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85) ](https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85))
 * [ https://owasp.org/www-community/Security_Headers ](https://owasp.org/www-community/Security_Headers)
 
 
@@ -515,7 +514,7 @@ Instances: 2
 ### Reference
 
 
-* [ http://projects.webappsec.org/Fingerprinting ](http://projects.webappsec.org/Fingerprinting)
+* [ https://cwe.mitre.org/data/definitions/205.html ](https://cwe.mitre.org/data/definitions/205.html)
 
 
 #### CWE Id: [ 200 ](https://cwe.mitre.org/data/definitions/200.html)
@@ -670,12 +669,6 @@ For secure content, ensure the cache-control HTTP header is set with "no-cache, 
 
 Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.
 
-* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/
-  * Method: `GET`
-  * Parameter: `Sec-Fetch-Dest`
-  * Attack: ``
-  * Evidence: ``
-  * Other Info: ``
 * URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1239
   * Method: `GET`
   * Parameter: `Sec-Fetch-Dest`
@@ -689,6 +682,12 @@ Specifies how and where the data would be used. For instance, if the value is au
   * Evidence: ``
   * Other Info: ``
 * URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/robots.txt
+  * Method: `GET`
+  * Parameter: `Sec-Fetch-Dest`
+  * Attack: ``
+  * Evidence: ``
+  * Other Info: ``
+* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/sitemap.xml
   * Method: `GET`
   * Parameter: `Sec-Fetch-Dest`
   * Attack: ``
@@ -724,12 +723,6 @@ Ensure that Sec-Fetch-Dest header is included in request headers.
 
 Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.
 
-* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/
-  * Method: `GET`
-  * Parameter: `Sec-Fetch-Mode`
-  * Attack: ``
-  * Evidence: ``
-  * Other Info: ``
 * URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1239
   * Method: `GET`
   * Parameter: `Sec-Fetch-Mode`
@@ -743,6 +736,12 @@ Allows to differentiate between requests for navigating between HTML pages and r
   * Evidence: ``
   * Other Info: ``
 * URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/robots.txt
+  * Method: `GET`
+  * Parameter: `Sec-Fetch-Mode`
+  * Attack: ``
+  * Evidence: ``
+  * Other Info: ``
+* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/sitemap.xml
   * Method: `GET`
   * Parameter: `Sec-Fetch-Mode`
   * Attack: ``
@@ -778,12 +777,6 @@ Ensure that Sec-Fetch-Mode header is included in request headers.
 
 Specifies the relationship between request initiator's origin and target's origin.
 
-* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/
-  * Method: `GET`
-  * Parameter: `Sec-Fetch-Site`
-  * Attack: ``
-  * Evidence: ``
-  * Other Info: ``
 * URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1239
   * Method: `GET`
   * Parameter: `Sec-Fetch-Site`
@@ -797,6 +790,12 @@ Specifies the relationship between request initiator's origin and target's origi
   * Evidence: ``
   * Other Info: ``
 * URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/robots.txt
+  * Method: `GET`
+  * Parameter: `Sec-Fetch-Site`
+  * Attack: ``
+  * Evidence: ``
+  * Other Info: ``
+* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/sitemap.xml
   * Method: `GET`
   * Parameter: `Sec-Fetch-Site`
   * Attack: ``
@@ -832,12 +831,6 @@ Ensure that Sec-Fetch-Site header is included in request headers.
 
 Specifies if a navigation request was initiated by a user.
 
-* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/
-  * Method: `GET`
-  * Parameter: `Sec-Fetch-User`
-  * Attack: ``
-  * Evidence: ``
-  * Other Info: ``
 * URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/pr-1239
   * Method: `GET`
   * Parameter: `Sec-Fetch-User`
@@ -851,6 +844,12 @@ Specifies if a navigation request was initiated by a user.
   * Evidence: ``
   * Other Info: ``
 * URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/robots.txt
+  * Method: `GET`
+  * Parameter: `Sec-Fetch-User`
+  * Attack: ``
+  * Evidence: ``
+  * Other Info: ``
+* URL: https://chefs-dev.apps.silver.devops.gov.bc.ca/sitemap.xml
   * Method: `GET`
   * Parameter: `Sec-Fetch-User`
   * Attack: ``
@@ -890,7 +889,7 @@ The given response has been identified as containing a session management token.
   * Method: `GET`
   * Parameter: `999e3eb7f082b6151bb98e1976871dda`
   * Attack: ``
-  * Evidence: `f5210475049c46d73f9675a149a03636`
+  * Evidence: `56553b15a6313382473e0bbb764467ee`
   * Other Info: `
 cookie:999e3eb7f082b6151bb98e1976871dda`
 
